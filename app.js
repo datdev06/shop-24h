@@ -3,11 +3,11 @@
 const PRODUCTS = [
   {id:'pb-10k',  name:'Pin Dự Phòng 10.000mAh',  price:200000, cat:'powerbank', img:'img/sp1.jpg'},
   {id:'pb-20k',  name:'Pin Dự Phòng 20.000mAh',  price:400000, cat:'powerbank', img:'img/sp2.jpg'},
-  {id:'pin-aa',  name:'Pin AA',                  price:69000,  cat:'powerbank', img:'img/sp7.jpg'},
+  {id:'pin-aa',  name:'Pin AA',                  price:20000,  cat:'powerbank', img:'img/sp7.jpg'},
 
-  {id:'mach-dien', name:'Mạch điện',             price:199000, cat:'module',    img:'img/sp6.jpg'},
+  {id:'mach-dien', name:'Mạch điện',             price:100000, cat:'module',    img:'img/sp6.jpg'},
   {id:'mach-arduino', name:'Mạch Arduino',       price:150000, cat:'module',    img:'img/sp5.jpg'},
-  {id:'mach-rpi',  name:'Mạch Raspberry Pi',     price:1200000,cat:'module',    img:'img/sp3.jpg'},
+  {id:'mach-rpi',  name:'Mạch Raspberry Pi',     price:300000,cat:'module',    img:'img/sp3.jpg'},
 
 ];
 
