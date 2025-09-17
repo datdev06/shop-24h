@@ -1,12 +1,12 @@
 // ---- Data ----
 // Có thể thay bằng dữ liệu thật hoặc JSON riêng
 const PRODUCTS = [
-  {id:'pb-10k', name:'Pin Dự Phòng 10.000mAh', price:200000, cat:'powerbank', img:'null'},
-  {id:'pb-20k', name:'Pin Dự Phòng 20.000mAh', price:400000, cat:'powerbank', img:'null'},
-  {id:'p-aa', name:'Pin AA', price:69000, cat:'powerbank', img:'null'},
-  {id:'mach-dien', name:'Mạch điện', price:199000, cat:'module', img:'null'},
-  {id:'mach-arduino', name:'Mạch Arduino', price:89000, cat:'module', img:'null'},
-  {id:'mach-raspberry-pi', name:'Mạch Raspberry Pi', price:25000, cat:'module', img:'null'},
+  {id:'pb-10k', name:'Pin Dự Phòng 10.000mAh', price:200000, cat:'powerbank', img:'img/sp1.jpg'},
+  {id:'pb-20k', name:'Pin Dự Phòng 20.000mAh', price:400000, cat:'powerbank', img:'img/sp2.jpg'},
+  {id:'p-aa', name:'Pin AA', price:69000, cat:'powerbank', img:'img/sp3.jpg'},
+  {id:'mach-dien', name:'Mạch điện', price:199000, cat:'module', img:'img/sp4.jpg'},
+  {id:'mach-arduino', name:'Mạch Arduino', price:89000, cat:'module', img:'img/sp5.jpg'},
+  {id:'mach-raspberry-pi', name:'Mạch Raspberry Pi', price:25000, cat:'module', img:'img/sp6.jpg'},
 ];
 
 // ---- Helpers ----
