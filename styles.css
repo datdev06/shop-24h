@@ -183,3 +183,45 @@ img { max-width: 100%; display: block; }
 .hero .cta .btn {
   margin: 0 8px;
 }
+
+/* Liên hệ */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #eee;
+}
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+}
+.social-links a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.social-links a.zalo {
+  background-color: #0068ff; /* xanh Zalo */
+}
+.social-links a.facebook {
+  background-color: #1877f2; /* xanh Facebook */
+}
+.social-links a:hover {
+  opacity: 0.9;
+}
