@@ -138,50 +138,50 @@ img { max-width: 100%; display: block; }
   }
 }
 
-/* Khung hero */
-.hero { margin: 16px 0 24px; }
-.hero-media{
+/* Hero cố định, chữ phủ lên ảnh */
+.hero.hero-fixed { margin: 16px 0 24px; }
+.hero.hero-fixed .hero-media{
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid #2a2a2a;          /* đẹp hơn trên nền tối */
+  border: 1px solid #2a2a2a;
   box-shadow: 0 8px 24px rgba(0,0,0,.25);
-  max-width: 980px;                    /* giúp hero cân giữa container */
-  margin: 0 auto;                      /* căn giữa ngang */
 }
-.hero-media img{
+.hero.hero-fixed .hero-media img{
   width: 100%;
-  height: 340px;                       /* cao ổn định */
+  height: 360px;
   object-fit: cover;
   display: block;
 }
-.hero-media .overlay{
+.hero.hero-fixed .overlay{
   position: absolute; inset: 0;
   background: linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.15));
 }
-
-/* Căn chữ – không lệch nữa */
-.hero-text{
+.hero.hero-fixed .hero-text{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);         /* giữa theo trục dọc */
-  left: clamp(16px, 4vw, 32px);        /* cách lề trái linh hoạt */
-  right: clamp(16px, 8vw, 40%);        /* chừa khoảng bên phải để không đè mép */
+  left: clamp(16px, 4vw, 32px);
+  bottom: 24px;                 /* đặt dưới ảnh */
+  right: clamp(16px, 8vw, 40%); /* chừa khoảng phải */
+  transform: none;
   color: #fff;
   max-width: 560px;
+  text-align: left;
 }
-.hero-text h1{
+.hero.hero-fixed .hero-text h1{
   margin: 0 0 8px;
   font-size: clamp(24px, 3.2vw, 40px);
   font-weight: 900;
   line-height: 1.15;
   text-shadow: 0 2px 10px rgba(0,0,0,.35);
 }
-.hero-text p{
-  margin: 0 0 16px;
-  color: rgba(255,255,255,.9);
-}
+.hero.hero-fixed .hero-text p{ margin:0 0 16px; color:rgba(255,255,255,.9); }
 .cta{ display:flex; gap:12px; flex-wrap:wrap; }
+
+@media (max-width: 640px){
+  .hero.hero-fixed .hero-media img{ height: 280px; }
+  .hero.hero-fixed .hero-text{ right: 16px; bottom: 18px; }
+}
+
 
 /* Mobile */
 @media (max-width: 640px){
