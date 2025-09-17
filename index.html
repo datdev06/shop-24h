@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pin & Linh Kiện Điện Tử – Giá tốt, giao nhanh</title>
+  <meta name="description" content="Shop pin sạc dự phòng, cell 18650/21700, pin AA/AAA, module DC-DC buck/boost, BMS, Arduino/ESP32, linh kiện rời. Giỏ hàng lưu localStorage, chạy tĩnh 100%." />
+  <meta property="og:title" content="Pin & Linh Kiện Điện Tử" />
+  <meta property="og:description" content="Đủ loại pin và module điện tử, giá tốt." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">🔧 TechParts</a>
+  <nav class="nav">
+    <a href="catalog.html">Sản phẩm</a>
+    <a href="cart.html">Giỏ hàng <span id="navCartQty" class="pill">0</span></a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Pin & Linh kiện điện tử</h1>
+      <p>Pin sạc dự phòng, cell 18650/21700, AA/AAA; module DC-DC, BMS, Arduino/ESP32, linh kiện rời.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="catalog.html">Xem sản phẩm</a>
+        <a class="btn" href="#cats">Danh mục</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">🔋</div>
+  </section>
+
+  <section id="cats" class="features">
+    <article><h3>Pin sạc dự phòng</h3><p>PD/QC, 10k–20k mAh.</p></article>
+    <article><h3>Cell 18650 / 21700</h3><p>Dự án DIY, công suất cao.</p></article>
+    <article><h3>Pin AA/AAA</h3><p>Alkaline, Ni-MH sạc được.</p></article>
+    <article><h3>Module DC-DC</h3><p>Buck/Boost, hiển thị V/A.</p></article>
+    <article><h3>BMS & Sạc</h3><p>Bảo vệ 1S-4S, mạch sạc.</p></article>
+    <article><h3>Arduino/ESP32</h3><p>Phát triển & IoT.</p></article>
+    <article><h3>Linh kiện rời</h3><p>Điện trở, tụ, diode, jack…</p></article>
+  </section>
+
+  <section class="why">
+    <h2>Vì sao chọn TechParts?</h2>
+    <ul>
+      <li>Thông số rõ ràng, giá minh bạch.</li>
+      <li>Giỏ hàng lưu tự động – chạy tĩnh 100%.</li>
+      <li>Hỗ trợ dự án DIY, có sẵn module phổ biến.</li>
+    </ul>
+    <a class="btn primary" href="catalog.html">Mua ngay</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <small>© <span id="y"></span> TechParts.</small>
+</footer>
+
+<script src="app.js"></script>
+<script>document.getElementById('y').textContent=new Date().getFullYear();updateNavCartQty();</script>
+</body>
+</html>
