@@ -204,21 +204,6 @@ img { max-width: 100%; display: block; }
   .hero-text{ right: 16px; }
 }
 
-/* Hero căn giữa toàn bộ khối */
-.hero.hero-split .hero-inner {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 24px;
-  align-items: center;
-
-  max-width: 1000px;   /* chiều rộng tối đa */
-  margin: 0 auto;      /* căn giữa */
-  padding: 20px;
-  border-radius: 16px;
-  border: 1px solid #2a2a2a;
-  background: rgba(0,0,0,.25);
-  box-shadow: 0 8px 24px rgba(0,0,0,.25);
-}
 
 /* Liên hệ */
 .contact {
