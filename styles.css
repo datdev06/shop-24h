@@ -156,3 +156,30 @@ img { max-width: 100%; display: block; }
   inset: 0;
   background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
 }
+
+/* Hero text trên ảnh */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.hero .cta .btn {
+  margin: 0 8px;
+}
