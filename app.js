@@ -79,7 +79,7 @@ function bindCardButtons(){
       const cart = getCart();
       cart[id] = (cart[id]||0) + 1;
       setCart(cart);
-      btn.textContent = 'Đã thêm ✓';
+      btn.textContent = 'Đã thêm';
       setTimeout(()=> btn.textContent='Thêm vào giỏ', 900);
     });
   });
