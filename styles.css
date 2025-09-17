@@ -138,48 +138,63 @@ img { max-width: 100%; display: block; }
   }
 }
 
-/* Hero cố định, chữ phủ lên ảnh */
-.hero.hero-fixed { margin: 16px 0 24px; }
-.hero.hero-fixed .hero-media{
-  position: relative;
+/* ===== Hero split: chữ trái, ảnh phải ===== */
+.hero.hero-split { margin: 16px 0 24px; }
+.hero.hero-split .hero-inner{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;   /* chữ : ảnh */
+  gap: 24px;
+  align-items: center;
   border-radius: 16px;
-  overflow: hidden;
+  padding: 20px;
   border: 1px solid #2a2a2a;
+  background: rgba(0,0,0,.25);
   box-shadow: 0 8px 24px rgba(0,0,0,.25);
 }
-.hero.hero-fixed .hero-media img{
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-  display: block;
-}
-.hero.hero-fixed .overlay{
-  position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.15));
-}
-.hero.hero-fixed .hero-text{
-  position: absolute;
-  left: clamp(16px, 4vw, 32px);
-  bottom: 24px;                 /* đặt dưới ảnh */
-  right: clamp(16px, 8vw, 40%); /* chừa khoảng phải */
+
+/* Text KHÔNG absolute nữa */
+.hero.hero-split .hero-text{
+  position: static;
   transform: none;
-  color: #fff;
-  max-width: 560px;
-  text-align: left;
+  color: #e5e7eb;
+  max-width: 600px;
 }
-.hero.hero-fixed .hero-text h1{
-  margin: 0 0 8px;
+.hero.hero-split .hero-text h1{
+  margin: 0 0 10px;
   font-size: clamp(24px, 3.2vw, 40px);
   font-weight: 900;
   line-height: 1.15;
-  text-shadow: 0 2px 10px rgba(0,0,0,.35);
+  color: #fff;
 }
-.hero.hero-fixed .hero-text p{ margin:0 0 16px; color:rgba(255,255,255,.9); }
-.cta{ display:flex; gap:12px; flex-wrap:wrap; }
+.hero.hero-split .hero-text p{ margin:0 0 16px; }
 
-@media (max-width: 640px){
-  .hero.hero-fixed .hero-media img{ height: 280px; }
-  .hero.hero-fixed .hero-text{ right: 16px; bottom: 18px; }
+.hero.hero-split .cta{ display:flex; gap:12px; flex-wrap:wrap; }
+
+/* Ảnh bên phải */
+.hero.hero-split .hero-media{
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.hero.hero-split .hero-media img{
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display:block;
+}
+.hero.hero-split .hero-media .overlay{
+  position: absolute; inset: 0;
+  background: linear-gradient(120deg, rgba(0,0,0,.15), rgba(0,0,0,.35));
+}
+
+/* Mobile: xếp dọc, ảnh xuống dưới */
+@media (max-width: 680px){
+  .hero.hero-split .hero-inner{
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+  .hero.hero-split .hero-media img{ height: 260px; }
 }
 
 
