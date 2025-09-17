@@ -1,14 +1,12 @@
 // ---- Data ----
 // Có thể thay bằng dữ liệu thật hoặc JSON riêng
 const PRODUCTS = [
-  {id:'pb-10k', name:'Pin sạc 10,000mAh PD18W', price:299000, cat:'powerbank', img:'https://images.unsplash.com/photo-1609592424804-7c4c0077fbee?q=80&w=1200&auto=format&fit=crop'},
-  {id:'pb-20k', name:'Pin sạc 20,000mAh PD22.5W', price:449000, cat:'powerbank', img:'https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=1200&auto=format&fit=crop'},
-  {id:'usb-c-1m', name:'Cáp USB‑C 1m 60W', price:69000, cat:'cable', img:'https://images.unsplash.com/photo-1564732005956-20420ebdab60?q=80&w=1200&auto=format&fit=crop'},
+  {id:'pb-10k', name:'Pin dự phòng 10.000mAh', price:200000, cat:'powerbank', img:'https://images.unsplash.com/photo-1609592424804-7c4c0077fbee?q=80&w=1200&auto=format&fit=crop'},
+  {id:'pb-20k', name:'Pin dự phòng 20.000mAh', price:400000, cat:'powerbank', img:'https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=1200&auto=format&fit=crop'},
+  {id:'machdien', name:'Mạch điện', price:69000, cat:'cable', img:'https://images.unsplash.com/photo-1564732005956-20420ebdab60?q=80&w=1200&auto=format&fit=crop'},
   {id:'usb-c-gan', name:'Sạc GaN 33W USB‑C', price:199000, cat:'cable', img:'https://images.unsplash.com/photo-1618424181497-157f25b6ddd1?q=80&w=1200&auto=format&fit=crop'},
   {id:'esp32', name:'Module ESP32 Wi‑Fi BLE', price:89000, cat:'module', img:'https://images.unsplash.com/photo-1586243287218-8b68a5893b67?q=80&w=1200&auto=format&fit=crop'},
   {id:'tp4056', name:'Mạch sạc TP4056 bảo vệ', price:25000, cat:'module', img:'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop'},
-  {id:'case-pb', name:'Vỏ case pin sạc 2 cell 21700', price:59000, cat:'accessory', img:'https://images.unsplash.com/photo-1585386959984-a41552231656?q=80&w=1200&auto=format&fit=crop'},
-  {id:'box-parts', name:'Hộp linh kiện 10 ngăn', price:39000, cat:'accessory', img:'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1200&auto=format&fit=crop'}
 ];
 
 // ---- Helpers ----
