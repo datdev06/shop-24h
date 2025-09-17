@@ -1,12 +1,12 @@
 // ---- Data ----
 // Có thể thay bằng dữ liệu thật hoặc JSON riêng
 const PRODUCTS = [
-  {id:'pb-10k', name:'Pin Dự Phòng 10.000mAh', price:200000, cat:'aa', img:'null'},
-  {id:'pb-20k', name:'Pin Dự Phòng 20.000mAh', price:400000, cat:'aa', img:'null'},
-  {id:'machdien', name:'Pin AA', price:69000, cat:'cable', img:'null'},
-  {id:'usb-c-gan', name:'Mạch điện', price:199000, cat:'aa', img:'null'},
-  {id:'esp32', name:'Mạch Arduino', price:89000, cat:'aa', img:'null'},
-  {id:'tp4056', name:'Mạch Raspberry Pi', price:25000, cat:'aa', img:'null'},
+  {id:'pb-10k', name:'Pin Dự Phòng 10.000mAh', price:200000, cat:'powerbank', img:'null'},
+  {id:'pb-20k', name:'Pin Dự Phòng 20.000mAh', price:400000, cat:'powerbank', img:'null'},
+  {id:'machdien', name:'Pin AA', price:69000, cat:'powerbank', img:'null'},
+  {id:'usb-c-gan', name:'Mạch điện', price:199000, cat:'module', img:'null'},
+  {id:'esp32', name:'Mạch Arduino', price:89000, cat:'module', img:'null'},
+  {id:'tp4056', name:'Mạch Raspberry Pi', price:25000, cat:'module', img:'null'},
 ];
 
 // ---- Helpers ----
