@@ -199,7 +199,7 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
   text-align: center;
   padding: 40px 20px;
-  border-top: 2px solid #333; /* đường kẻ trên cho rõ ràng */
+  border-top: 2px solid #333;
 }
 .contact h2 {
   font-size: 24px;
@@ -214,7 +214,7 @@ img { max-width: 100%; display: block; }
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 .social-links a {
   display: inline-flex;
@@ -227,15 +227,15 @@ img { max-width: 100%; display: block; }
   font-size: 16px;
 }
 .social-links a img {
-  width: 20px;
+  width: 20px;   /* nhỏ lại icon */
   height: 20px;
   margin-right: 8px;
 }
 .social-links a.zalo {
-  background-color: #0068ff; /* xanh Zalo */
+  background-color: #0068ff;
 }
 .social-links a.facebook {
-  background-color: #1877f2; /* xanh Facebook */
+  background-color: #1877f2;
 }
 .social-links a:hover {
   opacity: 0.9;
